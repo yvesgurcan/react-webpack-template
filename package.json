@@ -1,7 +1,7 @@
 {
     "name": "react-webpack-boilerplate",
-    "version": "1.0.0",
-    "description": "A home-brewed boilerplate to get your React project started.",
+    "version": "0.0.3",
+    "description": "A template to get your React project started.",
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server"
