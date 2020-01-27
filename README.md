@@ -1,10 +1,11 @@
 # React app
 
 ## Dependencies
-* React Router
-* Styled Components
-* Babel config
-* Prettier config
+
+- React Router
+- Styled Components
+- Babel config
+- Prettier config
 
 ## Setup
 
