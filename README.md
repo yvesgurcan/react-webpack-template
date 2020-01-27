@@ -8,11 +8,11 @@
 
 ## Setup
 
-`npm i`
+  npm i
 
 ## Development
 
-`npm start`
+  npm start
 
 Runs development server at `localhost:8080`.
 
