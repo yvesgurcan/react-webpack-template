@@ -1,4 +1,4 @@
-# React/Webpack boilerplate
+# React/Webpack template
 
 ## Dependencies
 * React Router
@@ -14,4 +14,4 @@
 
 `npm start`
 
-Outputs a build file when running dev server--for faster deployment on GitHub Pages.
+Outputs a build file when running development server--for faster deployment on GitHub Pages.
