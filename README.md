@@ -1,4 +1,4 @@
-# React/Webpack template
+# React app
 
 ## Dependencies
 * React Router
@@ -14,4 +14,6 @@
 
 `npm start`
 
-Outputs a build file when running development server--for faster deployment on GitHub Pages.
+Runs development server at `localhost:8080`.
+
+Also outputs a build file for faster deployment to GitHub Pages.
