@@ -1,17 +1,20 @@
-# React/Webpack boilerplate
+# React app
 
 ## Dependencies
-* React Router
-* Styled Components
-* Babel config
-* Prettier config
+
+- React Router
+- Styled Components
+- Babel config
+- Prettier config
 
 ## Setup
 
-`npm i`
+    npm i
 
 ## Development
 
-`npm start`
+    npm start
 
-Outputs a build file when running dev server--for faster deployment on GitHub Pages.
+Runs development server at `localhost:8080`.
+
+Also outputs a build file for faster deployment to GitHub Pages.
