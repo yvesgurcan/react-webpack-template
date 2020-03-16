@@ -104,9 +104,9 @@ define("./service-worker.js",['./workbox-86668f65'], function (workbox) { 'use s
 
   workbox.precacheAndRoute([{
     "url": "index.html",
-    "revision": "6dfd79feebb7e1c75f496e1bb046a81c"
+    "revision": "c8713299f0c4bb5f80aae5f93f46906c"
   }, {
-    "url": "main.4d50f8916f4cfb7b0746.js",
+    "url": "main.533c1de8d9aee1b7c646.js",
     "revision": "8b5777bb450dd7a604dbfdb2f503d7e0"
   }], {});
 
