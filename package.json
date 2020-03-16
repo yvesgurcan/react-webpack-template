@@ -1,6 +1,6 @@
 {
     "name": "react-webpack-template",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "🏁 A template to get started quickly with a React project.",
     "main": "index.js",
     "scripts": {
