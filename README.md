@@ -1,6 +1,6 @@
-# React app
+# React application
 
-## Dependencies
+## Main dependencies
 
 - React Router
 - Styled Components
