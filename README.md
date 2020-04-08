@@ -18,3 +18,13 @@
 Runs development server at `localhost:8080`.
 
 Also outputs a build file for faster deployment to GitHub Pages.
+
+## Structure
+
+    src
+    │
+    ├── components
+    ├── views
+    ├── index.js
+    ├── index.html
+    
