@@ -22,7 +22,6 @@ Also outputs a build file for faster deployment to GitHub Pages.
 ## Structure
 
     src
-    │
     ├── components
     ├── views
     ├── index.js
