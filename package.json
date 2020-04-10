@@ -20,7 +20,7 @@
         "babel-loader": "^8.1.0",
         "babel-plugin-styled-components": "^1.10.7",
         "clean-webpack-plugin": "^3.0.0",
-        "html-webpack-plugin": "^4.0.2",
+        "html-webpack-plugin": "^4.2.0",
         "jest": "^25.3.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
