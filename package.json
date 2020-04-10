@@ -5,7 +5,11 @@
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server",
-        "test": "jest"
+        "build": "webpack --mode production",
+        "test": "jest",
+        "preversion": "npm run test",
+        "postversion": "npm run build && git add . && git commit -m 'New build' && git push"
+
     },
     "author": "Yves Gurcan",
     "license": "MIT",

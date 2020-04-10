@@ -2,10 +2,10 @@
 
 ## Main dependencies
 
-- React Router
-- Styled Components
-- Babel config
-- Prettier config
+-   React Router
+-   Styled Components
+-   Babel config
+-   Prettier config
 
 ## Setup
 
@@ -17,7 +17,13 @@
 
 Runs development server at `localhost:8080`.
 
-Also outputs a build file for faster deployment to GitHub Pages.
+## Deployment
+
+Bump the version of your application.
+
+    npm version patch
+
+This command will run your tests, create a production build at the root of your project, commit and push it.
 
 ## Structure
 
@@ -26,4 +32,3 @@ Also outputs a build file for faster deployment to GitHub Pages.
     ├── views
     ├── index.js
     ├── index.html
-    
