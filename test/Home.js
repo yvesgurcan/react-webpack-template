@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Home from '../src/Home';
+import Home from '../src/views/Home';
 
 test('Shows hello world', () => {
     const HELLO_WORLD = 'Bonjour, monde.';
