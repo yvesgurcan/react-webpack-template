@@ -3,8 +3,12 @@ import styled from 'styled-components';
 import LoremIpsum from '../components/Home.LoremIpsum';
 
 const isServiceWorkerRegistered = async serviceWorker => {
-    const registrations = await serviceWorker.getRegistrations();
-    return !!registrations.length > 0;
+    if (serviceWorker) {
+        const registrations = await serviceWorker.getRegistrations();
+        return !!registrations.length > 0;
+    }
+
+    return false;
 };
 
 const registerServiceWorker = serviceWorker => {

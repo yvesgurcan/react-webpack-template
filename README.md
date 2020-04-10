@@ -17,7 +17,7 @@
 
 Runs development server at `localhost:8080`.
 
-## Deployment
+## Build/Deployment
 
 Bump the version of your application.
 
