@@ -12,9 +12,11 @@ const registerServiceWorker = serviceWorker => {
 };
 
 const unregisterServiceWorker = async serviceWorker => {
-    const registrations = await serviceWorker.getRegistrations();
-    for (let registration of registrations) {
-        registration.unregister();
+    if (serviceWorker) {
+        const registrations = await serviceWorker.getRegistrations();
+        for (let registration of registrations) {
+            registration.unregister();
+        }
     }
 };
 
