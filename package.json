@@ -1,6 +1,6 @@
 {
     "name": "react-webpack-template",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "🏁 A template to get started quickly with a React project.",
     "main": "index.js",
     "scripts": {
@@ -9,7 +9,6 @@
         "test": "jest",
         "preversion": "npm run test",
         "postversion": "npm run build && git add . && git commit -m 'New build' && git push"
-
     },
     "author": "Yves Gurcan",
     "license": "MIT",
