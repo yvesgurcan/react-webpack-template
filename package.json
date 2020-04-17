@@ -4,11 +4,12 @@
     "description": "🏁 A template to get started quickly with a React project.",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server",
+        "start": "npm run network-info; webpack-dev-server",
         "build": "webpack --mode production",
         "test": "jest",
         "preversion": "npm run test",
-        "postversion": "npm run build && git add . && git commit -m 'New build' && git push"
+        "postversion": "npm run build && git add . && git commit -m 'New build' && git push",        
+        "network-info": "echo \"ℹ ｢wds｣ Running on local network at http:/\" | tr \"\n\" \"/\"; ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print $2}'"
     },
     "author": "Yves Gurcan",
     "license": "MIT",
