@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, './')
@@ -28,19 +28,19 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts?$/,
+                test: /\.ts(x?)$/,
                 exclude: /node_modules/,
-                use: 'babel-loader'
+                use: ['babel-loader', 'ts-loader']
             },
             {
-                test: /\.js?$/,
+                test: /\.js(x?)$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
             }
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js']
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
     optimization: {
         // Separate runtime code into a runtime chunk
