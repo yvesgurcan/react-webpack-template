@@ -2,20 +2,24 @@ import React, { Fragment, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import LoremIpsum from '../components/Home.LoremIpsum';
 
-const isServiceWorkerRegistered = async serviceWorker => {
+const isServiceWorkerRegistered = async (
+    serviceWorker: ServiceWorkerContainer
+) => {
     if (serviceWorker) {
         const registrations = await serviceWorker.getRegistrations();
-        return !!registrations.length > 0;
+        return registrations.length > 0;
     }
 
     return false;
 };
 
-const registerServiceWorker = serviceWorker => {
+const registerServiceWorker = (serviceWorker: ServiceWorkerContainer) => {
     serviceWorker.register('/service-worker.js');
 };
 
-const unregisterServiceWorker = async serviceWorker => {
+const unregisterServiceWorker = async (
+    serviceWorker: ServiceWorkerContainer
+) => {
     if (serviceWorker) {
         const registrations = await serviceWorker.getRegistrations();
         for (let registration of registrations) {
