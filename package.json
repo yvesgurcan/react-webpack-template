@@ -8,7 +8,7 @@
         "build": "webpack --mode production",
         "test": "jest",
         "preversion": "npm run test",
-        "postversion": "npm run build && git add . && git commit -m 'New build' && git push",        
+        "postversion": "npm run build && git add . && git commit -m 'New build' && git push",
         "network-info": "echo \"ℹ ｢wds｣ Running on local network at http:/\" | tr \"\n\" \"/\"; ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print $2}'"
     },
     "author": "Yves Gurcan",
@@ -33,7 +33,7 @@
         "styled-components": "^5.1.0",
         "webpack": "^4.42.1",
         "webpack-cli": "^3.3.11",
-        "webpack-dev-server": "^3.10.3",
+        "webpack-dev-server": "^3.11.0",
         "workbox-webpack-plugin": "^5.1.2"
     }
 }
