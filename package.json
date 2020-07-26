@@ -1,7 +1,13 @@
 {
     "name": "react-webpack-template",
-    "version": "0.0.8",
     "description": "🏁 A template to get started quickly with a React project.",
+    "version": "0.0.8",
+    "license": "MIT",
+    "author": "Yves Gurcan",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yvesgurcan/react-webpack-boilerplate"
+    },
     "main": "index.js",
     "scripts": {
         "start": "npm run network-info; webpack-dev-server",
@@ -11,8 +17,6 @@
         "postversion": "npm run build && git add . && git commit -m 'New build' && git push",
         "network-info": "echo \"ℹ ｢wds｣ Running on local network at http:/\" | tr \"\n\" \"/\"; ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print $2}'"
     },
-    "author": "Yves Gurcan",
-    "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.10.5",
         "@babel/plugin-proposal-class-properties": "^7.10.4",
