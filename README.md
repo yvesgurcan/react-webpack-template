@@ -5,7 +5,8 @@
 -   TypeScript
 -   React Router
 -   Styled Components
--   Babel config
+-   Webpack
+-   Babel
 -   Prettier config
 
 ## Setup
