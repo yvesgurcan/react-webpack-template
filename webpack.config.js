@@ -17,6 +17,14 @@ module.exports = {
                 'runtime.*.js'
             ]
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: 'public',
+                    to: 'public'
+                }
+            ]
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html'

@@ -31,6 +31,12 @@ Entry point of the application is located at `./src/index.ts`. This file must us
 
 A prettier config file is located at the root of the project so that your IDE can use it to apply linting rules while you're working with the code.
 
+## Assets
+
+Static public assets can be placed in the `public` folder.
+
+You will be able to reference these files from within your code (`public/myfont.woff2`, for example).
+
 ## Build/Deployment
 
 Bump the version of your application to create a new build.
