@@ -1,23 +1,23 @@
 const path = require('path');
+const { EnvironmentPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const { ENVIRONMENT } = process.env;
 
 module.exports = {
     entry: './src/index.tsx',
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, './')
+        path: path.resolve(__dirname, './build')
     },
     plugins: [
-        new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: [
-                'main.*.js',
-                'vendors~main.*.js',
-                'runtime.*.js'
-            ]
+        new EnvironmentPlugin({
+            ENVIRONMENT
         }),
+        new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns: [
                 {
@@ -31,7 +31,10 @@ module.exports = {
             template: './src/index.html'
         }),
         new GenerateSW({
-            skipWaiting: true
+            skipWaiting: true,
+            clientsClaim: true,
+            maximumFileSizeToCacheInBytes: 99999999,
+            exclude: [/\.DS_Store/]
         })
     ],
     module: {
